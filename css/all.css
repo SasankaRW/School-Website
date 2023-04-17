@@ -1,0 +1,101 @@
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.copyright {
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    padding: 5px;
+    text-align: center;
+    background: rgb(14, 14, 45);
+    color: white;
+    vertical-align: bottom;
+    position:static;
+    bottom: 0;
+    margin-top: 350px;
+}
+
+.copyright p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 10;
+}
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.htitle{
+  height: 100px;
+}
+
+.margin-top{
+  margin-top: 16px;
+}
+.tcenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.xxlarge{
+  font-size: 36px!important;
+}
+.text-white{
+  color: #fff!important;
+}
+.tpadding{
+  padding: 8px 16px!important;
+}
+.black{
+  color: #fff!important;
+  background-color: #000!important;
+}
+.opacity-min{
+  opacity: 0.75;
+}

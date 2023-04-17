@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/reg.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <script src="../js/register.js"></script>
+  
+ 
+    <script src="../js/all.js"></script>
+    <style>
+        h1{
+          text-align: center;
+          color: rgb(135, 90, 105);
+        }
+        u{
+          color: rgb(0, 0, 0);
+        }
+      h1{
+        text-align: center;
+      }
+      
+    </style>
+
+  </head>
+  <body >
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="logo">
+        <a href="../html/home.html"><img src="../pics/Logo.png" width="70px" alt="LK International School Logo" ></a>
+    </div>
+      <a href="home.html">Home</a>
+      <a href="reg.html">Registration</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="login.html">LogIn</a>
+    </div>
+      
+  <div id="main">
+    <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+    <div class="margin-top tcenter">
+      <h1 class="xxlarge text-white"><span class="tpadding black opacity-min"><b>LK</b></span> <span style="color: #3f3f3f;">International</span></h1>
+      </div>
+    <div id="login" align="center">
+      
+      <form class="form" name="form" onsubmit="return validateform(this);">
+        <div class="header">Registration Form</div>
+        <div class="inputs">
+          <input placeholder="User Id" class="input" type="text" name="uid" id="uid" required>
+          <input placeholder="Password" class="input" type="password" name="pw1" id="password1" required>
+          <input placeholder="Name" class="input" type="text" name="name" id="name" required>
+          <input placeholder="Address" class="input" type="text" name="address" id="address" required>
+          <select name="country" id="con" class="input" required>
+            <option value="">Choose a country</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="Maldives">Maldives</option>
+            <option value="Japan">Japan</option>
+            <option value="India">India</option>
+          </select>
+          <input placeholder="Zip Code" class="input" type="text" name="zcode" id="zcode" style="width: 30%;" required>
+          <input placeholder="Email" class="input" type="text" name="email" id="email" style="width: 30%;" required>
+          <label for="sex">Sex:</label>
+          <span>
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="fmale" name="sex" value="female">
+            <label for="fmale">Female</label>
+          </span>
+          <label for="eng">Language:</label>
+          <span>
+            <input type="checkbox" name="eng" id="eng">English
+            <input type="checkbox" name="neng" id="neng">Non English
+          </span>
+          <textarea placeholder="About" class="input" id="about" name="about" rows="10" cols="20" required></textarea>
+          <input type="submit" id="Submit" value="Register">
+          <button class="reset-btn">Reset</button>
+
+        </div>
+      </form>
+      
+    <div class="copyright">
+      <p>Copyright &copy 2023 - LKInternational School - All Rights Reserved</p>
+      </div>
+      
+  </body>
+</html>

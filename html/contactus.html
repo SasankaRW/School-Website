@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <script src="../js/all.js"></script>
+     <!-- Internal CSS -->
+     <style>
+      #contact {
+          padding: 50px 100px;
+      }
+
+      .contact-left {
+          flex-basis: 35%;
+      }
+
+      .contact-right {
+          flex-basis: 60%;
+      }
+
+      .contact-left p {
+          margin-top: 30px;
+      }
+
+      .contact-left p i {
+          color: rgb(14, 14, 21);
+          margin-right: 15px;
+          font-size: 25px;
+      }
+
+      .contact-right form {
+          width: 100%;
+      }
+
+      form input,
+      form textarea {
+          width: 100%;
+          border: 0;
+          outline: none;
+          background: #EEEEEE;
+          padding: 15px;
+          margin: 15px 0;
+          color: #262626;
+          font-size: 18px;
+          border-radius: 6px;
+      }
+
+      /* Send Button */
+      form .btn.btn2 {
+          background-color: rgb(82, 82, 82);
+          color: #fff;
+          padding: 14px 60px;
+          font-size: 18px;
+          margin-top: 20px;
+          cursor: pointer;
+          animation: none;
+      }
+
+      form .btn.btn2:hover {
+          background-color: rgb(32, 32, 43);
+      }
+
+      #msg {
+          color: #61B752;
+          margin-top: -40px;
+          display: block;
+      }
+      img{
+        padding-left: 5%;
+        padding-top: 3%;
+      }
+   
+  </style>
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="logo">
+        <a href="../html/home.html"><img src="../pics/Logo.png" width="70px" alt="LK International School Logo" ></a>
+    </div>
+    <a href="home.html">Home</a>
+    <a href="reg.html">Registration</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="login.html">LogIn</a>
+  </div>
+    
+<div id="main">
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+<center><div class="margin-top tcenter">
+    <h1 class="xxlarge text-white"><span class="tpadding black opacity-min"><b>LK</b></span> <span style="color: #3f3f3f;">International</span></h1>
+    </div></center>
+  
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa-solid fa-phone"></i>Mobile: +94 11 562 4563</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email :LkInternational@gmail.com</p>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Type Your Message..."></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy 2023 - LKInternational School - All Rights Reserved</p>
+    </div>
+
+
+</body>
+
+</html>
